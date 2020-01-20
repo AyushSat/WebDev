@@ -1,4 +1,6 @@
 
+$anidur:1s;
+
 html, body{
 	margin:0;
 	padding:0;
@@ -113,14 +115,14 @@ body{
 
 #homepagein h1{
 	animation-name: slide-in;
-	animation-duration: 1.25s;
+	animation-duration: $anidur;
 	animation-fill-mode:both;
 	animation-timing-function: ease-in-out;
 
 }
 #homepagein .homepagebuttons{
 	animation-name: slide-in;
-	animation-duration: 1.25s;
+	animation-duration: $anidur;
 	animation-fill-mode:both;
 	animation-timing-function: ease-in-out;
 	animation-delay:.1s;
@@ -158,14 +160,14 @@ body{
 
 #homepageout{
 	animation-name:slide-out;
-	animation-duration: 1.25s;
+	animation-duration: $anidur;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode:both;
 }
 
 @keyframes slide-out{
 	0%{tranform: translate(-50%, -50%)}
-	100%{transform: translate(-300%, -50%)}
+	100%{transform: translate(-500%, -50%)}
 }
 
 footer{
@@ -200,11 +202,25 @@ footer{
 	transform: translate(-300%, -50%);
 }
 
-#airlineinfoin{
+#airlineinfoin h1{
 
 	animation-name: airlinein;
-	animation-duration: 1.25s;
+	animation-duration: $anidur;
 	animation-fill-mode: both;
+}
+
+#airlineinfoin .airlinecontent{
+    animation-name: airlinein;
+	animation-duration: $anidur;
+    animation-fill-mode: both;
+    animation-delay: .1s;
+}
+
+#airlineinfoin .airlinebutton{
+    animation-name: airlineinbutton;
+	animation-duration: $anidur;
+    animation-fill-mode: both;
+    animation-delay: .2s;
 }
 
 .airlineinfo button{
@@ -231,19 +247,33 @@ footer{
 
 @keyframes airlinein{
 	0%{
-		transform: translate(300%,-50%);
+		transform: translate(300%,0%);
 	}
-    95%{
-		transform: translate(-52.5%, -50%);
+    90%{
+		transform: translate(-1.5%, 0%);
 	}
 	100%{
-		transform: translate(-50%, -50%);
+		transform: translate(0%, 0%);
 	}
+}
+
+@keyframes airlineinbutton{
+    0%{
+		transform: translate(1000%,0%);
+	}
+    90%{
+		transform: translate(-1.5%, 0%);
+	}
+	100%{
+		transform: translate(0%, 0%);
+	}
+    
+
 }
 
 #airlineinfoout{
 	animation-name: airlineout;
-	animation-duration: 1.25s;
+	animation-duration: $anidur;
 	animation-fill-mode: both;
 
 }
@@ -267,6 +297,8 @@ footer{
 .airlinecontent p{
 	width:90vw;
 	padding: 0vw 5vw;
-	font-size: 1.25rem;
+    font-size: 1.5rem;
+    text-align:left;
+    line-height: 4vh;
 }
 
