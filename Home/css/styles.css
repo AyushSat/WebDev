@@ -1,3 +1,4 @@
+/*all pages*/
 html, body {
   margin: 0;
   padding: 0;
@@ -81,6 +82,8 @@ body {
   color: #167286;
 }
 
+/*end all page styling*/
+/*homepage styling*/
 .header {
   position: absolute;
   top: 50%;
@@ -105,6 +108,15 @@ body {
   border: 2px white solid;
   font-size: 19px;
   margin-top: 60px;
+}
+
+.header button:hover {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.header button:active {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #homepagein h1 {
@@ -165,46 +177,6 @@ body {
   padding-left: 10px;
 }
 
-.header button:hover {
-  background: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.header button:active {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#homepageout {
-  -webkit-animation-name: slide-out;
-          animation-name: slide-out;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes slide-out {
-  0% {
-    tranform: translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: translate(-500%, -50%);
-            transform: translate(-500%, -50%);
-  }
-}
-
-@keyframes slide-out {
-  0% {
-    tranform: translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: translate(-500%, -50%);
-            transform: translate(-500%, -50%);
-  }
-}
-
 footer {
   color: #ffffff;
   position: fixed;
@@ -227,8 +199,26 @@ footer {
 }
 
 .airlineinfo h1 {
-  /*margin-bottom:-3rem;*/
+  margin-bottom: 2rem;
   font-size: 5rem;
+}
+
+.airlineinfo button {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0);
+  padding: 12px 32px;
+  border: 2px white solid;
+  font-size: 19px;
+  margin-top: 60px;
+}
+
+.airlineinfo button:hover {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.airlineinfo button:active {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #airlineinfoinit {
@@ -267,22 +257,21 @@ footer {
           animation-delay: .2s;
 }
 
-.airlineinfo button {
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0);
-  padding: 12px 32px;
-  border: 2px white solid;
-  font-size: 19px;
-  margin-top: 60px;
+.airlinecontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.airlineinfo button:hover {
-  background: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.airlineinfo button:active {
-  background: rgba(0, 0, 0, 0.5);
+.airlinecontent p {
+  width: 90vw;
+  padding: 0vw 5vw;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 2rem;
+  margin-bottom: -1rem;
 }
 
 @-webkit-keyframes airlinein {
@@ -345,6 +334,37 @@ footer {
   }
 }
 
+#homepageout {
+  -webkit-animation-name: slide-out;
+          animation-name: slide-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    tranform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-500%, -50%);
+            transform: translate(-500%, -50%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    tranform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-500%, -50%);
+            transform: translate(-500%, -50%);
+  }
+}
+
 #airlineinfoout {
   -webkit-animation-name: airlineout;
           animation-name: airlineout;
@@ -376,19 +396,5 @@ footer {
   }
 }
 
-.airlinecontent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.airlinecontent p {
-  width: 90vw;
-  padding: 0vw 5vw;
-  font-size: 1.5rem;
-  text-align: left;
-  line-height: 4vh;
-}
+/*end homepage styling*/
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,4 @@
-
+/*all pages*/
 $anidur:1s;
 
 html, body{
@@ -39,96 +39,104 @@ body{
 	font-size:22px;
 	line-height:80px;
 	padding: 0 6em;
-}
 
-.logo a{
-	text-decoration: none;
-	color:white;
-}
+	a{
+		text-decoration: none;
+		color:white;
+	}
 
-.logo a:hover{
-	color:#1e9eb9;
+	a:hover{
+		color:#1e9eb9;
+	}
 
-}
-
-.logo a:active{
-	color:#167286;
+	a:active{
+		color:#167286;
+	}
 }
 
 .menu{
 	float:right;
 	line-height:50px;
 	margin:0 6em;
+
+	ul{
+		list-style:none;
+
+		li{
+			display:inline-block;
+
+			a{
+				text-decoration: none;
+				color:#ffffff;
+				font-size:16px;
+				font-weight:lighter;
+				padding:0 20px;
+			}
+
+			a:hover{
+				color:#1e9eb9;
+			}
+
+			a:active{
+				color:#167286;
+			}
+		}
+	}
+
 }
-
-.menu ul{
-	list-style: none;
-}
-
-.menu ul li{
-	display:inline-block;
-}
-
-.menu ul li a{
-	text-decoration: none;
-	color:#ffffff;
-	font-size:16px;
-	font-weight:lighter;
-	padding:0 20px;
-}
-
-.menu ul li a:hover{
-	color:#1e9eb9;
-
-}
-
-.menu ul li a:active{
-	color:#167286;
-
-}
-
+/*end all page styling*/
+/*homepage styling*/
 .header{
 	position: absolute;
 	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%);
 	text-align:center;
+
+	h1{
+		color:#ffffff;
+		font-size:80px;
+		font-weight:1600;
+		font-style:bold;
+		margin-bottom:-45px;
+	}
+
+	button{
+		color:#ffffff;
+		background:rgba(0,0,0,0);
+		padding:12px 32px;
+		border: 2px white solid;
+		font-size:19px;
+		margin-top:60px;
+	}
+
+	button:hover{
+		background:rgba(0,0,0,.3);
+		cursor:pointer;
+	}
+
+	button:active{
+		background:rgba(0,0,0,.5);
+	}
+
 }
 
-.header h1{
-	color:#ffffff;
-	font-size:80px;
-	font-weight:1600;
-	font-style:bold;
-	margin-bottom:-45px;
+#homepagein{
+	h1{
+		animation-name: slide-in;
+		animation-duration: $anidur;
+		animation-fill-mode:both;
+		animation-timing-function: ease-in-out;
+	}
+
+	.homepagebuttons{
+		animation-name: slide-in;
+		animation-duration: $anidur;
+		animation-fill-mode:both;
+		animation-timing-function: ease-in-out;
+		animation-delay:.1s;
+	}
 }
-
-.header button{
-	color:#ffffff;
-	background:rgba(0,0,0,0);
-	padding:12px 32px;
-	border: 2px white solid;
-	font-size:19px;
-	margin-top:60px;
-}
-
-
-#homepagein h1{
-	animation-name: slide-in;
-	animation-duration: $anidur;
-	animation-fill-mode:both;
-	animation-timing-function: ease-in-out;
-
-}
-#homepagein .homepagebuttons{
-	animation-name: slide-in;
-	animation-duration: $anidur;
-	animation-fill-mode:both;
-	animation-timing-function: ease-in-out;
-	animation-delay:.1s;
-}
-
-
 
 @keyframes slide-in{
 	0%   { 
@@ -146,29 +154,6 @@ body{
 	padding-left: 10px;
 }
 
-.header button:hover{
-
-	background:rgba(0,0,0,.3);
-	cursor:pointer;
-}
-
-.header button:active{
-
-	background:rgba(0,0,0,.5);
-
-}
-
-#homepageout{
-	animation-name:slide-out;
-	animation-duration: $anidur;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode:both;
-}
-
-@keyframes slide-out{
-	0%{tranform: translate(-50%, -50%)}
-	100%{transform: translate(-500%, -50%)}
-}
 
 footer{
 	color:#ffffff;
@@ -190,60 +175,78 @@ footer{
 	transform: translate(-50%, -50%);
 	width: 100vw;
 
+	h1{
+		margin-bottom: 2rem;
+		font-size: 5rem;
+	}
+
+	button{
+		color:#ffffff;
+		background:rgba(0,0,0,0);
+		padding:12px 32px;
+		border: 2px white solid;
+		font-size:19px;
+		margin-top:60px;
+	}
+
+	button:hover{
+		background:rgba(0,0,0,.3);
+		cursor:pointer;
+	}
+
+	button:active{
+		background:rgba(0,0,0,.5);
+
+	}
 }
 
-.airlineinfo h1{
-    /*margin-bottom:-3rem;*/
-    font-size: 5rem;
-}
+
+
 
 
 #airlineinfoinit{
 	transform: translate(-300%, -50%);
 }
 
-#airlineinfoin h1{
+#airlineinfoin{
 
-	animation-name: airlinein;
-	animation-duration: $anidur;
-	animation-fill-mode: both;
+	h1{
+		animation-name: airlinein;
+		animation-duration: $anidur;
+		animation-fill-mode: both;
+	}
+
+	.airlinecontent{
+		animation-name: airlinein;
+		animation-duration: $anidur;
+		animation-fill-mode: both;
+		animation-delay: .1s;
+	}
+
+	.airlinebutton{
+
+		animation-name: airlineinbutton;
+		animation-duration: $anidur;
+    	animation-fill-mode: both;
+    	animation-delay: .2s;
+	}
+	
 }
 
-#airlineinfoin .airlinecontent{
-    animation-name: airlinein;
-	animation-duration: $anidur;
-    animation-fill-mode: both;
-    animation-delay: .1s;
+.airlinecontent{
+	display: flex;
+	justify-content: space-around;
+
+	p{
+		width:90vw;
+		padding: 0vw 5vw;
+		font-size: 1.5rem;
+		text-align:left;
+		line-height: 2rem;
+		margin-bottom:-1rem;
+	}
 }
 
-#airlineinfoin .airlinebutton{
-    animation-name: airlineinbutton;
-	animation-duration: $anidur;
-    animation-fill-mode: both;
-    animation-delay: .2s;
-}
-
-.airlineinfo button{
-	color:#ffffff;
-	background:rgba(0,0,0,0);
-	padding:12px 32px;
-	border: 2px white solid;
-	font-size:19px;
-	margin-top:60px;
-
-}
-
-.airlineinfo button:hover{
-
-	background:rgba(0,0,0,.3);
-	cursor:pointer;
-}
-
-.airlineinfo button:active{
-
-	background:rgba(0,0,0,.5);
-
-}
 
 @keyframes airlinein{
 	0%{
@@ -271,6 +274,18 @@ footer{
 
 }
 
+#homepageout{
+	animation-name:slide-out;
+	animation-duration: $anidur;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode:both;
+}
+
+@keyframes slide-out{
+	0%{tranform: translate(-50%, -50%)}
+	100%{transform: translate(-500%, -50%)}
+}
+
 #airlineinfoout{
 	animation-name: airlineout;
 	animation-duration: $anidur;
@@ -287,18 +302,7 @@ footer{
 	}
 
 }
-.airlinecontent{
-	display: flex;
-	justify-content: space-around;
-}
 
 
-
-.airlinecontent p{
-	width:90vw;
-	padding: 0vw 5vw;
-    font-size: 1.5rem;
-    text-align:left;
-    line-height: 4vh;
-}
+/*end homepage styling*/
 
