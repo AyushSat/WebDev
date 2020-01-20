@@ -1,0 +1,247 @@
+
+html, body{
+	margin:0;
+	padding:0;
+    width:100%;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+
+body{
+	width:100%;
+	height:100vh;
+	background:url('../img/img5.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:table;
+	font-family:'Montserrat';
+}
+
+.nav{
+	position: fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:80px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.logo{
+	letter-spacing:1px;
+	float:left;
+	color:white;
+	text-decoration: none;
+	font-size:22px;
+	line-height:80px;
+	padding: 0 6em;
+}
+
+.logo a{
+	text-decoration: none;
+	color:white;
+}
+
+.logo a:hover{
+	color:#1e9eb9;
+
+}
+
+.logo a:active{
+	color:#167286;
+}
+
+.menu{
+	float:right;
+	line-height:50px;
+	margin:0 6em;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu ul li{
+	display:inline-block;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:lighter;
+	padding:0 20px;
+}
+
+.menu ul li a:hover{
+	color:#1e9eb9;
+
+}
+
+.menu ul li a:active{
+	color:#167286;
+
+}
+
+.header{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+
+.header h1{
+	color:#ffffff;
+	font-size:80px;
+	font-weight:1600;
+	font-style:bold;
+	margin-bottom:-45px;
+}
+
+.header button{
+	color:#ffffff;
+	background:rgba(0,0,0,0);
+	padding:12px 32px;
+	border: 2px white solid;
+	font-size:19px;
+	margin-top:60px;
+}
+
+#homepagein{
+	animation-name: slide-in;
+	animation-duration: .75s;
+	animation-fill-mode:both;
+	animation-timing-function: ease-in-out;
+
+}
+
+@keyframes slide-in{
+	0%   { 
+		transform: translate(300%, -50%); 		
+	}
+	95%{
+		transform: translate(-52.5%, -50%);
+	}
+	100% { 
+		transform: translate(-50%, -50%); 
+	}
+}
+
+.lastchild {
+	padding-left: 10px;
+}
+
+.header button:hover{
+
+	background:rgba(0,0,0,.3);
+	cursor:pointer;
+}
+
+.header button:active{
+
+	background:rgba(0,0,0,.5);
+
+}
+
+#homepageout{
+	animation-name:slide-out;
+	animation-duration: .75s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode:both;
+}
+
+@keyframes slide-out{
+	0%{tranform: translate(-50%, -50%)}
+	100%{transform: translate(-300%, -50%)}
+}
+
+footer{
+	color:#ffffff;
+	position:fixed;
+	width:100%;
+	bottom:0;
+	text-align:center;
+	background-color:rgba(15,13,8,0);
+}
+
+
+.airlineinfo{
+	position:absolute;
+	color:white;
+	display: inline-block;
+	top: 50%;
+	left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.airlineinfo h1{
+    /*margin-bottom:-3rem;*/
+    font-size: 5rem;
+}
+
+#airlineinfoinit{
+	transform: translate(-300%, -50%);
+}
+
+#airlineinfoin{
+
+	animation-name: airlinein;
+	animation-duration: .75s;
+	animation-fill-mode: both;
+}
+
+.airlineinfo button{
+	color:#ffffff;
+	background:rgba(0,0,0,0);
+	padding:12px 32px;
+	border: 2px white solid;
+	font-size:19px;
+	margin-top:60px;
+
+}
+
+.airlineinfo button:hover{
+
+	background:rgba(0,0,0,.3);
+	cursor:pointer;
+}
+
+.airlineinfo button:active{
+
+	background:rgba(0,0,0,.5);
+
+}
+
+@keyframes airlinein{
+	0%{
+		transform: translate(300%,-50%);
+    }
+    95%{
+		transform: translate(-52.5%, -50%);
+	}
+	100%{
+		transform: translate(-50%, -50%);
+	}
+}
+
+#airlineinfoout{
+	animation-name: airlineout;
+	animation-duration: 0.75s;;
+	animation-fill-mode: both;
+
+}
+
+@keyframes airlineout{
+	0%{
+		transform: translate(-50%, -50%);
+	}
+	100%{
+		transform: translate(-300%, -50%);
+	}
+
+}
