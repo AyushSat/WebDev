@@ -397,4 +397,10 @@ footer {
 }
 
 /*end homepage styling*/
+/*frequent flyer styling*/
+.title {
+  color: white;
+  padding: 10vh 0px 0px 7vw;
+  font-size: 5rem;
+}
 /*# sourceMappingURL=styles.css.map */
