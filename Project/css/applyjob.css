@@ -7,7 +7,7 @@ html, body{
 body{
 	width:100%;
 	height:100vh;
-	background:url('applyjob.jpg');
+	background:url('../img/img5.png');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -63,6 +63,15 @@ body{
 
 }
 
+.logo a:hover{
+	color:#1e9eb9;
+
+}
+
+.logo a:active{
+	color:#167286;
+}
+
 .menu ul li a:active{
 	color:#167286;
 
@@ -102,6 +111,16 @@ body{
 	font-size:18px;
 	border-radius:20px;
 	font-family:'Montserrat';
+	margin-top: 10px;
+}
+.contact button:hover{
+	background-color: rgb(0,0,0,0.3);
+	cursor:pointer;
+}
+
+.contact button:active{
+	background-color: rgb(0,0,0,0.5);
+	
 }
 
 .contact input[type="name"], input[type="email"], input[type="occupation"]{
@@ -113,12 +132,37 @@ body{
 	color:#ffffff;
 	font-size:20px;
 	font-family:'Montserrat';
+	padding-bottom: 5px;
 }
 
-input[type=file] {
-  color: white;
-	font-size:14px;
-	font-family:'Montserrat';
+.contact input[type="occupation"]{
+	margin-bottom: 5px;
+}
+.resumebutton {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+}
+
+
+.submitlabel{
+	color:white;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius:30px;
+	background-color: rgb(0,0,0,0);
+}
+
+.submitlabel:hover{
+	background-color: rgb(0,0,0,0.3);
+	cursor:pointer;
+}
+
+.submitlabel:active{
+	background-color: rgb(0,0,0,0.5);
 
 }
 
