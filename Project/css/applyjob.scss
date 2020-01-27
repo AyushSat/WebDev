@@ -26,7 +26,7 @@ body{
 	border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
-.logo a{
+.logo{
 	letter-spacing:1px;
 	float:left;
 	color:white;
@@ -34,46 +34,48 @@ body{
 	font-size:22px;
 	line-height:80px;
 	padding: 0 6em;
-}
 
+	a{
+		text-decoration: none;
+		color:white;
+	}
+
+	a:hover{
+		color:#1e9eb9;
+	}
+
+	a:active{
+		color:#167286;
+	}
+}
 .menu{
 	float:right;
 	line-height:50px;
 	margin:0 6em;
-}
 
-.menu ul{
-	list-style: none;
-}
+	ul{
+		list-style:none;
 
-.menu ul li{
-	display:inline-block;
-}
+		li{
+			display:inline-block;
 
-.menu ul li a{
-	text-decoration: none;
-	color:#ffffff;
-	font-size:16px;
-	font-weight:lighter;
-	padding:0 20px;
-}
+			a{
+				text-decoration: none;
+				color:#ffffff;
+				font-size:16px;
+				font-weight:lighter;
+				padding:0 20px;
+			}
 
-.menu ul li a:hover{
-	color:#1e9eb9;
+			a:hover{
+				color:#1e9eb9;
+			}
 
-}
-
-.logo a:hover{
-	color:#1e9eb9;
-
-}
-
-.logo a:active{
-	color:#167286;
-}
-
-.menu ul li a:active{
-	color:#167286;
+			a:active{
+				color:#167286;
+			}
+		}
+	}
 
 }
 
@@ -92,36 +94,37 @@ body{
 
 .contact{
 	text-align:left;
-	padding-left:15%;
+    padding-left:15%;
+    
+    p{
+        color:#fff;
+    }
+
+    input{
+        width:85%;
+    }
+
+    button{
+        width:85%;
+    	height:40px;
+	    background:transparent;
+	    color:#fff;
+	    font-size:18px;
+	    border-radius:20px;
+	    font-family:'Montserrat';
+	    margin-top: 10px;
+    }
+
+    button:hover{
+        background-color: rgb(0,0,0,0.3);
+        cursor:pointer; 
+    }
+
+    button:active{
+        background-color: rgb(0,0,0,0.5);
+    }
 }
 
-.contact p{
-	color:#fff;
-}
-
-.contact input{
-	width:85%;
-}
-
-.contact button{
-	width:85%;
-	height:40px;
-	background:transparent;
-	color:#fff;
-	font-size:18px;
-	border-radius:20px;
-	font-family:'Montserrat';
-	margin-top: 10px;
-}
-.contact button:hover{
-	background-color: rgb(0,0,0,0.3);
-	cursor:pointer;
-}
-
-.contact button:active{
-	background-color: rgb(0,0,0,0.5);
-	
-}
 
 .contact input[type="name"], input[type="email"], input[type="occupation"]{
 	border: none;
@@ -153,7 +156,7 @@ body{
 	border: 1px solid white;
 	padding: 10px;
 	border-radius:30px;
-	background-color: rgb(0,0,0,0);
+    background-color: rgb(0,0,0,0);
 }
 
 .submitlabel:hover{
