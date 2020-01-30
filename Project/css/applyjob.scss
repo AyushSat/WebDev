@@ -116,12 +116,12 @@ body{
     }
 
     button:hover{
-        background-color: rgb(0,0,0,0.3);
+        background-color:rgba(0,0,0,0.3);
         cursor:pointer; 
     }
 
     button:active{
-        background-color: rgb(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.5);
     }
 }
 
@@ -156,16 +156,16 @@ body{
 	border: 1px solid white;
 	padding: 10px;
 	border-radius:30px;
-    background-color: rgb(0,0,0,0);
+    background-color: rgba(0,0,0,0);
 }
 
 .submitlabel:hover{
-	background-color: rgb(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3);
 	cursor:pointer;
 }
 
 .submitlabel:active{
-	background-color: rgb(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.5);
 
 }
 

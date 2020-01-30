@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/img5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+  font-family: 'Montserrat';
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  letter-spacing: 1px;
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 80px;
+  padding: 0 6em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo a:hover {
+  color: #1e9eb9;
+}
+
+.logo a:active {
+  color: #167286;
+}
+
+.menu {
+  float: right;
+  line-height: 50px;
+  margin: 0 6em;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0 20px;
+}
+
+.menu ul li a:hover {
+  color: #1e9eb9;
+}
+
+.menu ul li a:active {
+  color: #167286;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title, .tagline, .jobdescription {
+  color: #ffffff;
+}
+
+.contact {
+  text-align: left;
+  padding-left: 15%;
+}
+
+.contact p {
+  color: #fff;
+}
+
+.contact input {
+  width: 85%;
+}
+
+.contact button {
+  width: 85%;
+  height: 40px;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  font-family: 'Montserrat';
+  margin-top: 10px;
+}
+
+.contact button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.contact button:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact input[type="name"], input[type="email"], input[type="occupation"] {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  height: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  padding-bottom: 5px;
+}
+
+.contact input[type="occupation"] {
+  margin-bottom: 5px;
+}
+
+.resumebutton {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.submitlabel {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.submitlabel:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.submitlabel:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(15, 13, 8, 0);
+}
+/*# sourceMappingURL=applyjob.css.map */
