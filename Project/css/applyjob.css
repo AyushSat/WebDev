@@ -113,7 +113,7 @@ body {
   font-size: 18px;
   border-radius: 20px;
   font-family: 'Montserrat';
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .contact button:hover {
@@ -141,13 +141,18 @@ body {
   margin-bottom: 5px;
 }
 
-.resumebutton {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
+.resumespan {
+  color: white;
+  font-size: 1rem;
   overflow: hidden;
   position: absolute;
   z-index: -1;
+  width: 60%;
+}
+
+.resumespan input {
+  -webkit-transform: translateX(-87px);
+          transform: translateX(-87px);
 }
 
 .submitlabel {
@@ -165,6 +170,20 @@ body {
 
 .submitlabel:active {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: white;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+#thanksout {
+  opacity: 0;
+}
+
+#thanksin {
+  opacity: 1;
 }
 
 footer {

@@ -112,7 +112,7 @@ body{
 	    font-size:18px;
 	    border-radius:20px;
 	    font-family:'Montserrat';
-	    margin-top: 10px;
+	    margin-top: 20px;
     }
 
     button:hover{
@@ -141,13 +141,19 @@ body{
 .contact input[type="occupation"]{
 	margin-bottom: 5px;
 }
-.resumebutton {
-		width: 0.1px;
-		height: 0.1px;
-		opacity: 0;
+.resumespan {
+		//width: 0.1px;
+		//height: 0.1px;
+		//opacity: 0;
+		color:white;
+		font-size: 1rem;
 		overflow: hidden;
 		position: absolute;
 		z-index: -1;
+		width: 60%;
+		input{
+			transform: translateX(-87px);
+		}
 }
 
 
@@ -156,7 +162,8 @@ body{
 	border: 1px solid white;
 	padding: 10px;
 	border-radius:30px;
-    background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	
 }
 
 .submitlabel:hover{
@@ -168,6 +175,21 @@ body{
 	background-color: rgba(0,0,0,0.5);
 
 }
+
+h2{
+	color:white;
+	transition:3s;
+}
+
+#thanksout{
+	opacity: 0;
+}
+
+#thanksin{
+	opacity: 1;
+}
+
+
 
 footer{
 	color:#ffffff;
