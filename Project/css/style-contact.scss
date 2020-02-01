@@ -1,0 +1,168 @@
+html, body{
+	margin:0;
+	padding:0;
+    width:100%;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+
+body{
+	width:100%;
+	height:100vh;
+	background:url('../img/img5.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:table;
+	font-family:'Montserrat';
+}
+
+.nav{
+	position: fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:80px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.logo{
+	letter-spacing:1px;
+	float:left;
+	color:white;
+	text-decoration: none;
+	font-size:22px;
+	line-height:80px;
+	padding: 0 6em;
+
+	a{
+		text-decoration: none;
+		color:white;
+	}
+
+	a:hover{
+		color:#1e9eb9;
+	}
+
+	a:active{
+		color:#167286;
+	}
+}
+
+.menu{
+	float:right;
+	line-height:50px;
+	margin:0 6em;
+
+	ul{
+		list-style:none;
+
+		li{
+			display:inline-block;
+
+			a{
+				text-decoration: none;
+				color:#ffffff;
+				font-size:16px;
+				font-weight:lighter;
+				padding:0 20px;
+			}
+
+			a:hover{
+				color:#1e9eb9;
+			}
+
+			a:active{
+				color:#167286;
+			}
+		}
+	}
+
+}
+.center{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
+}
+
+.title, .description{
+	color:#ffffff;
+}
+
+.contact{
+	text-align:left;
+	padding-left:15%;
+}
+
+.contact p{
+	color:#fff;
+}
+
+.contact input{
+	width:85%;
+}
+
+.contact input[type="name"], input[type="email"], input[type="subject"], input[type="message"]{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background: transparent;
+	outline: none;
+	height:20px;
+	color:#ffffff;
+	font-size:20px;
+	font-family:'Montserrat';
+}
+
+.contact input[type="subject"]{
+	margin-bottom: 10px;
+}
+
+.contact textarea{
+	background: rgba(0,0,0,0);
+	margin-bottom:20px;
+	width:85%;
+	color:white;
+	border: 2px solid rgba(255,255,255,0.5);
+	font-size:1rem;
+	padding:5px;
+	font-family: 'Montserrat';
+	
+	&::placeholder{
+		color:white;
+	}
+}
+
+
+
+.contact button{
+	width:85%;
+	height:40px;
+	background:rgba(0,0,0,0);
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+	font-family:'Montserrat';
+
+	&:hover{
+		background: rgba(0,0,0,0.3);
+		cursor: pointer;
+	}
+
+	&:active{
+		background: rgba(0,0,0,0.5);
+
+	}
+}
+
+footer{
+	color:#ffffff;
+	position:fixed;
+	width:100%;
+	bottom:0;
+	text-align:center;
+	background-color:rgba(15,13,8,0);
+}
