@@ -12,5 +12,11 @@ function animatein(){
     if(valid){
         console.log("testmonky");
         document.querySelector(".thanks").setAttribute("id", "thanksin");
+        const frm = document.querySelector("#form");
+        frm.reset();
     }
+
+    
+
+    return false;
 }
