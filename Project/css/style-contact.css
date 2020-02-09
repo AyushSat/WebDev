@@ -90,7 +90,7 @@ body {
   text-align: center;
 }
 
-.title, .tagline, .jobdescription {
+.title, .description {
   color: #ffffff;
 }
 
@@ -107,28 +107,7 @@ body {
   width: 85%;
 }
 
-.contact button {
-  width: 85%;
-  height: 40px;
-  background: transparent;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px;
-  font-family: 'Montserrat';
-  margin-top: 20px;
-  outline: none;
-}
-
-.contact button:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.contact button:active {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.contact input[type="name"], input[type="email"], input[type="occupation"] {
+.contact input[type="name"], input[type="email"], input[type="subject"], input[type="message"] {
   border: none;
   border-bottom: 1px solid #ffffff;
   background: transparent;
@@ -137,58 +116,56 @@ body {
   color: #ffffff;
   font-size: 20px;
   font-family: 'Montserrat';
-  padding-bottom: 5px;
-  outline: none;
 }
 
-.contact input[type="occupation"] {
-  margin-bottom: 5px;
+.contact input[type="subject"] {
+  margin-bottom: 10px;
 }
 
-.resumespan {
+.contact textarea {
+  background: rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
+  width: 85%;
   color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   font-size: 1rem;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-  width: 60%;
+  padding: 5px;
+  font-family: 'Montserrat';
 }
 
-.resumespan input {
-  -webkit-transform: translateX(-87px);
-          transform: translateX(-87px);
-  outline: none;
-}
-
-.submitlabel {
+.contact textarea::-webkit-input-placeholder {
   color: white;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0);
 }
 
-.submitlabel:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.contact textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.contact textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.contact textarea::placeholder {
+  color: white;
+}
+
+.contact button {
+  width: 85%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  font-family: 'Montserrat';
+}
+
+.contact button:hover {
+  background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-.submitlabel:active {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-  color: white;
-  -webkit-transition: 3s;
-  transition: 3s;
-}
-
-#thanksout {
-  opacity: 0;
-}
-
-#thanksin {
-  opacity: 1;
+.contact button:active {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -199,4 +176,4 @@ footer {
   text-align: center;
   background-color: rgba(15, 13, 8, 0);
 }
-/*# sourceMappingURL=applyjob.css.map */
+/*# sourceMappingURL=style-contact.css.map */

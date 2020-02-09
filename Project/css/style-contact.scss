@@ -1,9 +1,9 @@
 html, body{
 	margin:0;
 	padding:0;
-	width:100%;
-	overflow-y: hidden;
-	overflow-x: hidden;
+    width:100%;
+    overflow-y: hidden;
+    overflow-x:hidden;
 }
 
 body{
@@ -50,6 +50,7 @@ body{
 		color:#167286;
 	}
 }
+
 .menu{
 	float:right;
 	line-height:50px;
@@ -80,7 +81,6 @@ body{
 	}
 
 }
-
 .center{
 	position:absolute;
 	top:50%;
@@ -89,47 +89,24 @@ body{
 	text-align:center;
 }
 
-.title, .tagline, .jobdescription{
+.title, .description{
 	color:#ffffff;
 }
 
-
 .contact{
 	text-align:left;
-    padding-left:15%;
-    
-    p{
-        color:#fff;
-    }
-
-    input{
-        width:85%;
-    }
-
-    button{
-        width:85%;
-    	height:40px;
-	    background:transparent;
-	    color:#fff;
-	    font-size:18px;
-	    border-radius:20px;
-	    font-family:'Montserrat';
-		margin-top: 20px;
-		outline: none;
-    }
-
-    button:hover{
-        background-color: rgba(0,0,0,0.3);
-        cursor:pointer; 
-    }
-
-    button:active{
-        background-color: rgba(0,0,0,0.5);
-    }
+	padding-left:15%;
 }
 
+.contact p{
+	color:#fff;
+}
 
-.contact input[type="name"], input[type="email"], input[type="occupation"]{
+.contact input{
+	width:85%;
+}
+
+.contact input[type="name"], input[type="email"], input[type="subject"], input[type="message"]{
 	border: none;
 	border-bottom: 1px solid #ffffff;
 	background: transparent;
@@ -138,63 +115,48 @@ body{
 	color:#ffffff;
 	font-size:20px;
 	font-family:'Montserrat';
-	padding-bottom: 5px;
-	outline:none;
 }
 
-.contact input[type="occupation"]{
-	margin-bottom: 5px;
-}
-.resumespan {
-		//width: 0.1px;
-		//height: 0.1px;
-		//opacity: 0;
-		color:white;
-		font-size: 1rem;
-		overflow: hidden;
-		position: absolute;
-		z-index: -1;
-		width: 60%;
-		input{
-			transform: translateX(-87px);
-			outline: none;
-		}
+.contact input[type="subject"]{
+	margin-bottom: 10px;
 }
 
-
-.submitlabel{
+.contact textarea{
+	background: rgba(0,0,0,0);
+	margin-bottom:20px;
+	width:85%;
 	color:white;
-	border: 1px solid white;
-	padding: 10px;
-	border-radius:30px;
-	background-color: rgba(0,0,0,0);
+	border: 2px solid rgba(255,255,255,0.5);
+	font-size:1rem;
+	padding:5px;
+	font-family: 'Montserrat';
 	
-}
-
-.submitlabel:hover{
-	background-color: rgba(0,0,0,0.3);
-	cursor:pointer;
-}
-
-.submitlabel:active{
-	background-color: rgba(0,0,0,0.5);
-
-}
-
-h2{
-	color:white;
-	transition:3s;
-}
-
-#thanksout{
-	opacity: 0;
-}
-
-#thanksin{
-	opacity: 1;
+	&::placeholder{
+		color:white;
+	}
 }
 
 
+
+.contact button{
+	width:85%;
+	height:40px;
+	background:rgba(0,0,0,0);
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+	font-family:'Montserrat';
+
+	&:hover{
+		background: rgba(0,0,0,0.3);
+		cursor: pointer;
+	}
+
+	&:active{
+		background: rgba(0,0,0,0.5);
+
+	}
+}
 
 footer{
 	color:#ffffff;

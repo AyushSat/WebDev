@@ -6,6 +6,7 @@
 	<title>CAirlines | Contact Us</title>
 	<link rel="stylesheet" href="css/applyjob.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<script src="./js/apply.js"></script>
 </head>
 <body>
 	<div class="nav">
@@ -19,7 +20,7 @@
 				<li><a href="#">Flight Schedules</a></li>
 				<li><a href="./frequentflyer.html">Frequent Flyer Program</a></li>
 				<li><a href="#">Apply For a Job</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="./contact.html">Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
@@ -38,25 +39,29 @@
       <p>Here at CAirlines, we believe that our company is one big family. We are always looking for new crew members, from enthusiastic flight hosts to exceptional pilots. If you think that you fit this description, feel free to fill in the following information. We'll get back to you as soon as possible!</p>
     </div>
 		<div class="contact">
-			<form>
+			<form autocomplete="off" action = "#" method="GET" id="form">
 				<p>Name</p>
-				<input type="name" placeholder="">
+				<input type="name" placeholder="" required>
 				<p>Email</p>
-				<input type="email" placeholder="">
+				<input type="email" placeholder=""  required>
 				<p>Occupation</p>
-				<input type="occupation" placeholder="">
-		<!--<p>Resume Upload</p>-->
-		<br>
-		<br>
-		<input type="file" class="resumebutton" id="file" name="file"  required>
-		<label for="file" class="submitlabel">Upload Resume</label>
-
-      </form>
+				<input type="occupation" placeholder="" required>
+				<!--<p>Resume Upload</p>-->
 				<br>
-				<button type="submit" class="button">Submit</button>
+				<br>
+				
+				<label for="file" class="submitlabel">Upload Resume</label>
+				<span class="resumespan"><input type="file" class="resumebutton" id="file" name="file" required></span>
+
+      
+				<br>
+				<button type="submit" value ="submit" onclick="animatein()" class="button">Submit</button>
+			</form>
 		</div>
+		<h2 id="thanksout" class="thanks">Thank you for applying! We will get back to you ASAP!</h2>
 
 	</div>
+
 
 	<footer>
 		<p>CAirlines, Copyright &copy; 2020</p>
