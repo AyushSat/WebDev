@@ -250,7 +250,7 @@ footer{
 
 @keyframes airlinein{
 	0%{
-		transform: translate(300%,0%);
+		transform: translate(500%,0%);
 	}
     90%{
 		transform: translate(-1.5%, 0%);
@@ -264,7 +264,7 @@ footer{
     0%{
 		transform: translate(1000%,0%);
 	}
-    90%{
+	90%{
 		transform: translate(-1.5%, 0%);
 	}
 	100%{
@@ -305,12 +305,4 @@ footer{
 
 
 /*end homepage styling*/
-
-/*frequent flyer styling*/
-
-.title{
-	color:white;
-	padding:10vh 0px 0px 7vw;
-	font-size: 5rem;
-}
 
