@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width", initial scale=1.0>
+	<meta name="google-signin-client_id" content="1091026397644-i6tev46ne0ep5lsgejpcde8jfjhan9te.apps.googleusercontent.com">
 	<title>CAirlines | Home</title>
 	<link rel="stylesheet" href="./css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script src="./js/script.js"></script>
+
 </head>
 <body>
 	<div class="wrapper">
@@ -30,6 +33,7 @@
 			<div class = "homepagebuttons">
 			<a href="#"><button type="button">Book a Flight</button></a>
 			<a class="lastchild"><button type="button" onclick="airlineclick()">Airline Information</button></a>
+			<div class="g-signin2"></div>
 			</div>
 		</div>
 		<div class="airlineinfo" id="airlineinfoinit">

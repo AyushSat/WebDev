@@ -1,3 +1,4 @@
+
 function airlineclick() {
 	document.querySelector(".header").setAttribute("id", "homepageout");
 	document.querySelector(".airlineinfo").setAttribute("id", "airlineinfoin");
