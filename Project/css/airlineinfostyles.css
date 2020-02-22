@@ -1,0 +1,237 @@
+/*all styling*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Raleway';
+  }
+  
+  button{
+    font-family: 'Raleway';
+  }
+  
+  header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+  }
+  
+  .logo-container, .nav-links{
+    display: flex;
+  }
+  .logo-container{
+    align-items: center;
+    font-size: 18px;
+    flex: 1;
+  }
+  .logo-container img{
+    width:15%;
+    height:15%;
+    mix-blend-mode: multiply;
+  }
+  .logo{
+    font-weight: 400;
+    margin: 5px;
+  }
+  nav{
+    flex: 2;
+  }
+  .nav-links{
+    justify-content: space-around;
+    list-style: none;
+  }
+  .nav-link{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  /*all styling ends*/
+  /*airline info styling begins*/
+
+  .cover{
+    background: url("../img/cover2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+  }
+
+  .background{
+      width: 87.5%;
+      margin: auto;
+      background-color:  #fcf1fd;
+  }
+/*
+  .title{
+      text-align: center;
+      padding: 50px 0px 50px 0px;
+      font-size: 36px;
+  }
+*/
+  .container1{
+      padding: 96px 0px 60px 0px;
+      width:60%;
+      text-align:center;
+      display: flex;
+      margin: auto;
+      align-items: center;
+  }
+
+  .info1{
+      flex: 1;
+      margin: 0px 20px 0px 20px;
+  }
+
+  .pic1{
+      flex: 1;
+      margin: 0px 20px 0px 20px;
+  }
+
+  .pic1 img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    border: 1px black solid;
+
+}
+
+.container2{
+    padding: 60px 0px 60px 0px;
+    width:60%;
+    text-align:center;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.info2{
+    flex: 1;
+    margin: 0px 20px 0px 20px;
+}
+
+.pic2{
+    flex: 1;
+    margin: 0px 20px 0px 20px;
+}
+
+.pic2 img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    border: 1px black solid;
+}
+
+.container3{
+  padding: 60px 0px 60px 0px;
+  width:60%;
+  text-align:center;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.info3{
+  flex: 1;
+  margin: 0px 20px 0px 20px;
+}
+
+.pic3{
+  flex: 1;
+  margin: 0px 20px 0px 20px;
+}
+
+.pic3 img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  border: 1px black solid;
+}
+
+.contact{
+  padding-top: 40px;
+  text-align:center;
+  margin:auto;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.inputinfo{
+  width: 55%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.leftcolumn{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.leftcolumn input{
+  padding-top: 20px;
+  margin: 0px 0px 20px 0px;
+  font-size: 18px;
+  font-family: 'Raleway';
+  vertical-align: middle;
+}
+
+.rightcolumn{
+  flex: 1;
+  margin-left: 10px;
+}
+
+.rightcolumn textarea{
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+
+/*
+
+.inputinfo input, textarea{
+  width: 40%;
+  font-size: 14px;
+}
+
+.inputinfo input{
+  padding-top: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+*/
+
+.contact button {
+  color: black;
+  background: rgba(0, 0, 0, 0);
+  padding: 12px 32px;
+  border: 1px black solid;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer{
+  background-color: #9695a8;
+  color: black;
+  text-align: center;
+}

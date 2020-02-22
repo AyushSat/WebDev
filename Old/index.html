@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial scale=1.0>
+	<meta name="google-signin-client_id" content="1091026397644-i6tev46ne0ep5lsgejpcde8jfjhan9te.apps.googleusercontent.com">
+	<title>CAirlines | Home</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="./js/script.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<a href = "#">
+					CAirlines
+				</a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#">Flight Schedules</a></li>
+					<li><a href="./frequentflyer.html">Frequent Flyer Program</a></li>
+					<li><a href="./applyjob.html">Apply For a Job</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header" id="homepagein">
+			<h1>Pay Light for Flight</h1>
+			<div class = "homepagebuttons">
+			<a href="#"><button type="button">Book a Flight</button></a>
+			<a class="lastchild"><button type="button" onclick="airlineclick()">Airline Information</button></a>
+			<div class="g-signin2"></div>
+			</div>
+		</div>
+		<div class="airlineinfo" id="airlineinfoinit">
+			<h1>Airline Information</h1>
+			<div class="airlinecontent">
+				<p class="floatleft">CAirlines was founded out of an attempt to experience first-class for economy pricing. 
+					Expensive airlines often charge tons of money for a flying experience that was mediocre at best, whereas 
+					discount airlines offer cramped spaces, terrible customer service, lost baggage, and worst of all, hidden fees. </p>
+				<p class="floatright">With CAirlines, you will never have to worry about losing baggage, sitting in constricted seating, and overall abysmal customer service,
+					both in flight and out of flight. Additionally, we prioritize transparency, ensuring that no hidden fees will come up ruining your vacation budget. </p>
+			</div>
+			<a href="#"><button class="airlinebutton" type="button" onclick="homeclick()">Back to home</button></a>
+		</div>
+	</div>
+
+	<footer>
+		<p>CAirlines, Copyright &copy; 2020</p>
+	</footer>
+</body>
+</html>
