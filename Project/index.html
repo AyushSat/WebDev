@@ -11,21 +11,22 @@
 <body>
 
     <div class="cover">
-        <header>
-            <div class="logo-container">
-                <img src="./img/logo2.png" alt="logo">
-                <h4 class="logo">Air Homestead</h4>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="nav-link" href="#">Book</a></li>
-                    <li><a class="nav-link" href="#">Airline Information</a></li>
-                    <li><a class="nav-link" href="#">Frequent Flyer Program</a></li>
-                    <li><a class="nav-link" href="#">Job Application</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+        <div class="headercontainer">
+            <header>
+                <div class="logo-container">
+                    <img src="./img/logo2.png" alt="logo">
+                    <a href="#" class="logo">Air Homestead</a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a class="nav-link" href="#">Book</a></li>
+                        <li><a class="nav-link" href="#">Airline Information</a></li>
+                        <li><a class="nav-link" href="#">Frequent Flyer Program</a></li>
+                        <li><a class="nav-link" href="#">Job Application</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>        
         <section class="presentation">
             <div class="header" id="homepagein">
                 <h1>Pay Light for Flights</h1>
@@ -38,7 +39,7 @@
     </div>
 
     <section class="benefits">
-        <h1>Benefits and stuff</h1>
+        <h1>BENEFITS</h1>
         <div class="blockflex">
             <div class="block">
                 <img src="" alt="">
@@ -58,22 +59,37 @@
         </div>
     </section>
 
+    <section class="frequent">
+
+        <h1>FREQUENT FLYER PROGRAM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat animi autem, expedita voluptas eum deserunt officia quod magni harum placeat quidem hic vitae quia corrupti nisi rem, consequatur consequuntur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat animi autem, expedita voluptas eum deserunt officia quod magni harum placeat quidem hic vitae quia corrupti nisi rem, consequatur consequuntur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat animi autem, expedita voluptas eum deserunt officia quod magni harum placeat quidem hic vitae quia corrupti nisi rem, consequatur consequuntur!</p>
+
+
+    </section>
+
     <section class="contact">
-        <h1>Contact Us</h1>
-        <br>
-        <p>Have a question? Contact us using the form below, and we'll get back to you as soon as possible.</p>
-        <div class="inputinfo">
-            <form>
+        <div class ="title">
+            <h1>Contact Us</h1>
+            <br>
+            <p>Have a question? Contact us using the form, and we'll get back to you ASAP.</p>
+        </div>
+        <form class="inputinfo">
+            <div class="userinfo">
                 <input type="name" placeholder="Name">
                 <br>
                 <input type="email" placeholder="Email">
                 <br>
                 <input type="" placeholder="Phone Number">
                 <br>
-                <textarea type="message" placeholder="Your message here" rows="5"></textarea>
-            </form>
-        </div>
-        <button type="submit" class="button_1">Submit</button>
+            </div>
+            <div class="message">
+                <textarea type="message" placeholder="Your message here" rows="3"></textarea>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        
     </section>
 
 	<!--<div class="details"> 
