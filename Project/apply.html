@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="./css/apply.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Sarabun&display=swap" rel="stylesheet">
-	<script src="./js/contact.js"></script>
+    <script src="./js/contact.js"></script>
+
 </head>
 <body>
 
@@ -37,13 +38,17 @@
                 <div class="panel">
                     <nav>
                         <ul>
-                            <li id = "first" class="active"><button>Pilot</button></li>
-                            <li id = "second"><button>Flight Attendant</button></li>
-                            <li id = "third"><button>Aerospace Enginneer</button></li>
+                            <li id = "first" class="active"><button onclick="act(1)">Pilot</button></li>
+                            <li id = "second"><button onclick="act(2)">Flight Attendant</button></li>
+                            <li id = "third"><button onclick="act(3)">Aerospace Engineer</button></li>
                         </ul>
-
                     </nav>
-
+                    <h1>Job Description</h1>
+                    <p id="jobdesc">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!</p>
+                    <h1>Benefits</h1>  
+                    <p id="benefits">1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque saepe incidunt obcaecati, modi doloremque quos libero odio, natus quibusdam voluptate? Ipsum, quod. Vitae dolore exercitationem ipsa non, quod maiores.</p>                  
+                    <h1>Requirements</h1>
+                    <p id="req">1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, excepturi! Reiciendis, repudiandae. Ut quos neque cumque esse rem, eveniet officiis est quibusdam alias quia quas, nihil, sit temporibus aliquam! Praesentium.</p>
                 </div>
 
             </div>
@@ -51,7 +56,11 @@
         
     </div>
 
+    <div class="form">
+        <h1>APPLY TO HOMESTEAD AIRLINES</h1>
 
+
+    </div>
 
     <section class="contact">
         <div class ="title">
@@ -62,15 +71,8 @@
                 <a href="https://www.instagram.com"><img src="img/insta.png" width=35px height=35px alt="insta"></a>
                 <a href="https://www.facebook.com"><img src="img/facebook.png" width=35px height=35px alt="fb"></a>
                 <a href="https://www.youtube.com"><img src="img/youtube.png" width=50px height=35px alt="yt"></a>
-                <a href="https://www.snapchat.com"><img src="img/snap.png" width=35px height=35px alt="sc"></a>
-                <a href="https://www.tiktok.com"><img src="img/tik.png" width=35px height=35px alt="tik"></a>
-                <a href="https://www.pinterest.com"><img src="img/pin.png" width=35px height=35px alt="pin"></a>
                 <a href="https://www.twitter.com"><img src="img/twitter.png" width=40px height=40px alt="twitter"></a>
-                <a href="https://www.reddit.com"><img src="img/reddit.png" width=35px height=35px alt="reddit"></a>
-                <a href="https://www.tumblr.com"><img src="img/tumblr.png" width=35px height=35px alt="reddit"></a>
-
-
-
+               
             </div>
         </div>
         <form class="inputinfo">
@@ -90,6 +92,7 @@
         </form>
         
     </section>
+    <script src="./js/apply.js"></script>
 
 
 
