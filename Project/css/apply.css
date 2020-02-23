@@ -1,0 +1,206 @@
+/*all styling*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Raleway';
+  }
+  
+  
+  .cover{
+    background: url("../img/customerservice.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+  }
+  
+  .headercontainer{
+    background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255,255,255,.5));
+    height:10vh;
+  }
+  
+  header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    color:rgb(41, 38, 30);
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .logo-container, .nav-links{
+    display: flex;
+  }
+  .logo-container{
+    align-items: center;
+  }
+  .logo-container img{
+    width:15%;
+    height:15%;
+    mix-blend-mode: multiply;
+  }
+  .logo{
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(41, 38, 30);
+    margin: 5px;
+  }
+  
+  .logo:hover{
+    color:rgb(45, 96, 27);
+    
+  }
+  
+  nav{
+    flex: 2;
+  }
+  .nav-links{
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .nav-link{
+    color: rgb(41, 38, 30);
+    font-size:  1rem;
+    text-decoration: none;
+    transition:.2s;
+  }
+  
+  .nav-link:hover{
+    color:rgb(45, 96, 27);
+    font-size:1.25rem;
+  }
+  
+  /*all styling ends*/
+  /*homepage styling begins*/
+  
+  .presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+  }
+
+
+  
+.contact{
+    padding-top: 40px;
+    text-align:center;
+    margin:auto;
+    align-items: center;
+    background: url("../img/airport.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    display:flex;
+    
+}
+  
+.title{
+    text-align: left;
+    padding-left: 30px;
+    flex:1;
+}
+  
+  
+.title h1{
+    font-size: 3rem;
+}
+  
+  
+.inputinfo{
+    flex:2;
+    display:flex;
+}
+  
+.userinfo{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.message{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+  
+.message textarea{
+    margin-left: 25px;
+    justify-self: left;
+    background:transparent;
+    font-size: 1.5rem;
+    width:90%;
+    height:55%;
+    color:white;
+    padding:5px;
+    font-family: 'Raleway';
+  
+}
+  
+.message textarea::placeholder{
+    font-family: 'Raleway';
+    color:rgb(190, 190, 190);
+}
+  
+.message button{
+    width:50%;
+    margin-top:20px;
+    align-self: center;
+    background: transparent;
+    font-size: 1.5rem;
+    color:white;
+    font-family: 'Raleway';
+  
+}
+  
+.message button:hover{
+    transition: .5s;
+    background-color: rgba(0, 201, 77, 0.2);
+    cursor: pointer;
+}
+  
+.inputinfo input{
+    background: transparent;
+    font-size:2rem;
+    padding:5px;
+    font-family: 'Raleway';
+    color:white;
+}
+  
+.inputinfo input::placeholder{
+    font-family: 'Raleway';
+    color:rgb(190, 190, 190);
+}
+  
+.social{
+    padding-top: 10px;
+}
+  
+.social a{
+    padding-right: 20px;
+} 
+.social a:last-child{
+    padding-right:0px;
+}
+  
+
+/***************/
+
+.content{
+  height: 85vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255);;
+}
+  

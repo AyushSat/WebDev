@@ -6,7 +6,7 @@
 	<title>Air Homestead | Home</title>
 	<link rel="stylesheet" href="./css/indexstyles.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
-	<script src="./js/script.js"></script>
+	<script src="./js/contact.js"></script>
 </head>
 <body>
 
@@ -15,14 +15,14 @@
             <header>
                 <div class="logo-container">
                     <img src="./img/logo2.png" alt="logo">
-                    <a href="#" class="logo">Air Homestead</a>
+                    <a href="#" class="logo">Homestead Airlines</a>
                 </div>
                 <nav>
                     <ul class="nav-links">
                         <li><a class="nav-link" href="#">Book</a></li>
-                        <li><a class="nav-link" href="#">Airline Information</a></li>
+                        <li><a class="nav-link" href="./airlineinfo.html">Airline Information</a></li>
                         <li><a class="nav-link" href="#">Frequent Flyer Program</a></li>
-                        <li><a class="nav-link" href="#">Job Application</a></li>
+                        <li><a class="nav-link" href="./apply.html">Job Application</a></li>
                     </ul>
                 </nav>
             </header>
@@ -65,7 +65,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat animi autem, expedita voluptas eum deserunt officia quod magni harum placeat quidem hic vitae quia corrupti nisi rem, consequatur consequuntur!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat animi autem, expedita voluptas eum deserunt officia quod magni harum placeat quidem hic vitae quia corrupti nisi rem, consequatur consequuntur!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat animi autem, expedita voluptas eum deserunt officia quod magni harum placeat quidem hic vitae quia corrupti nisi rem, consequatur consequuntur!</p>
-
+        <a href="airlineinfo.html">LEARN MORE</a>
 
     </section>
 
@@ -73,20 +73,35 @@
         <div class ="title">
             <h1>Contact Us</h1>
             <br>
-            <p>Have a question? Contact us using the form, and we'll get back to you ASAP.</p>
+            <p>Have a question? Contact us using the form, and we'll get back to you ASAP. <br> Or, you can find us at our social media links:</p>
+            <div class="social">
+                <a href="https://www.instagram.com"><img src="img/insta.png" width=35px height=35px alt="insta"></a>
+                <a href="https://www.facebook.com"><img src="img/facebook.png" width=35px height=35px alt="fb"></a>
+                <a href="https://www.youtube.com"><img src="img/youtube.png" width=50px height=35px alt="yt"></a>
+                <a href="https://www.snapchat.com"><img src="img/snap.png" width=35px height=35px alt="sc"></a>
+                <a href="https://www.tiktok.com"><img src="img/tik.png" width=35px height=35px alt="tik"></a>
+                <a href="https://www.pinterest.com"><img src="img/pin.png" width=35px height=35px alt="pin"></a>
+                <a href="https://www.twitter.com"><img src="img/twitter.png" width=40px height=40px alt="twitter"></a>
+                <a href="https://www.reddit.com"><img src="img/reddit.png" width=35px height=35px alt="reddit"></a>
+                <a href="https://www.tumblr.com"><img src="img/tumblr.png" width=35px height=35px alt="reddit"></a>
+
+
+
+            </div>
         </div>
         <form class="inputinfo">
             <div class="userinfo">
-                <input type="name" placeholder="Name">
+                <input class="in" type="name" placeholder="Name" required>
                 <br>
-                <input type="email" placeholder="Email">
+                <input class="in" type="email" placeholder="Email" required>
                 <br>
-                <input type="" placeholder="Phone Number">
+                <input class="in" type="" placeholder="Phone Number" required>
                 <br>
+                <p>Copyright HomesteadAirlines &copy; 2020</p>
             </div>
             <div class="message">
-                <textarea type="message" placeholder="Your message here" rows="3"></textarea>
-                <input type="submit" value="Submit">
+                <textarea class="in" type="message" placeholder="Your message here" rows="3" required></textarea>
+                <button onclick="clear()" type="submit">Submit</button>
             </div>
         </form>
         
@@ -112,8 +127,6 @@
 		</div>
 	</div> -->
 
-	<footer>
-		<p>CAirlines, Copyright &copy; 2020</p>
-	</footer>
+
 </body>
 </html>

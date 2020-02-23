@@ -158,6 +158,19 @@ nav{
   padding-bottom: 30px;
 }
 
+.frequent a{
+  text-decoration: none;
+  color: rgb(41, 38, 30);
+  padding:20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.frequent a:hover{
+  transition: .5s;
+  background-color:rgba(0, 201, 77, 0.2);
+}
+
 
 .inputinfo{
   width: 55%;
@@ -271,11 +284,21 @@ nav{
   color:rgb(190, 190, 190);
 }
 
-.message input{
+.message button{
   width:50%;
-  margin-top:30px;
+  margin-top:20px;
   align-self: center;
+  background: transparent;
+  font-size: 1.5rem;
   color:white;
+  font-family: 'Raleway';
+
+}
+
+.message button:hover{
+  transition: .5s;
+  background-color: rgba(0, 201, 77, 0.2);
+  cursor: pointer;
 }
 
 .inputinfo input{
@@ -291,8 +314,15 @@ nav{
   color:rgb(190, 190, 190);
 }
 
-footer{
-  background-color: #9695a8;
-  color: black;
-  text-align: center;
+.social{
+  padding-top: 10px;
 }
+
+.social a{
+  padding-right: 20px;
+}
+
+.social a:last-child{
+  padding-right:0px;
+}
+
