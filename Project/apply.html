@@ -40,15 +40,17 @@
                         <ul>
                             <li id = "first" class="active"><button onclick="act(1)">Pilot</button></li>
                             <li id = "second"><button onclick="act(2)">Flight Attendant</button></li>
-                            <li id = "third"><button onclick="act(3)">Aerospace Engineer</button></li>
+                            <li id = "third"><button onclick="act(3)">Flight Technician</button></li>
                         </ul>
                     </nav>
-                    <h1>Job Description</h1>
-                    <p id="jobdesc">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!</p>
-                    <h1>Benefits</h1>  
-                    <p id="benefits">1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque saepe incidunt obcaecati, modi doloremque quos libero odio, natus quibusdam voluptate? Ipsum, quod. Vitae dolore exercitationem ipsa non, quod maiores.</p>                  
-                    <h1>Requirements</h1>
-                    <p id="req">1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, excepturi! Reiciendis, repudiandae. Ut quos neque cumque esse rem, eveniet officiis est quibusdam alias quia quas, nihil, sit temporibus aliquam! Praesentium.</p>
+                    <div class="jobinfo">
+                        <h1>Job Description</h1>
+                        <p id="jobdesc">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!</p>
+                        <h1>Benefits</h1>  
+                        <p id="benefits">1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque saepe incidunt obcaecati, modi doloremque quos libero odio, natus quibusdam voluptate? Ipsum, quod. Vitae dolore exercitationem ipsa non, quod maiores.</p>                  
+                        <h1>Requirements</h1>
+                        <p id="req">1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, excepturi! Reiciendis, repudiandae. Ut quos neque cumque esse rem, eveniet officiis est quibusdam alias quia quas, nihil, sit temporibus aliquam! Praesentium.</p>
+                    </div>
                 </div>
 
             </div>
@@ -58,7 +60,29 @@
 
     <div class="form">
         <h1>APPLY TO HOMESTEAD AIRLINES</h1>
+        <form>
+            <div class="rightform">
+                <input type="name" placeholder="Name" autocomplete="off" required>
+                <input type="email" placeholder="Email" autocomplete="off" required>
+                <input type="occupation" placeholder="Current Occupation" autocomplete="off" required>
+                <div class="jobbtns">
+                    <h2>Job:</h2>
+                    <a id="pilot" onclick="toggle(1)">Pilot</a>
+                    <a id="atdnt" onclick="toggle(2)">Flight Attendant</a>
+                    <a id="tech" onclick="toggle(3)">Flight Technician</a>
+                </div>
+            </div>
+            <div class="leftform">
+                <textarea class="coverletter" type="text" placeholder="Please write a cover letter informing us of why we should accept you. (500 words max)" required></textarea>
+                <p class="resume">Please e-mail your resume from the same email provided to <br> <b>application@homesteadairlines.com</b></p>
+                
+                <a href="applied.html" class="submit">Submit</a>
 
+
+            </div>
+
+
+        </form>
 
     </div>
 
@@ -92,6 +116,8 @@
         </form>
         
     </section>
+
+
     <script src="./js/apply.js"></script>
 
 

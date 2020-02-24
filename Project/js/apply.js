@@ -91,3 +91,43 @@ function b3click(){
 }
 
 
+/*******Job Buttons*****/
+
+const pilot = document.getElementById("pilot");
+const atdnt = document.getElementById("atdnt");
+const tech = document.getElementById("tech");
+
+let currBtn = 0;
+
+function toggle(numBtn){
+    if(numBtn == 1){
+        pilot.setAttribute("class", "shade");
+
+        if(atdnt.getAttribute("class")==="shade"){
+            atdnt.removeAttribute("class");
+        }
+        if(tech.getAttribute("class")==="shade"){
+            tech.removeAttribute("class");
+        }
+    }else if(numBtn == 2){
+        atdnt.setAttribute("class", "shade");
+
+        if(pilot.getAttribute("class")==="shade"){
+            pilot.removeAttribute("class");
+        }
+        if(tech.getAttribute("class")==="shade"){
+            tech.removeAttribute("class");
+        }
+    }else if(numBtn == 3){
+        tech.setAttribute("class", "shade");
+
+        if(pilot.getAttribute("class")==="shade"){
+            pilot.removeAttribute("class");
+        }
+        if(atdnt.getAttribute("class")==="shade"){
+            atdnt.removeAttribute("class");
+        }
+    }
+}
+
+
