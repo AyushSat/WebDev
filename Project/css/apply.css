@@ -230,7 +230,8 @@
   border:1px solid white;
   flex:5;
   align-self: center;
-  max-height: 60vh;
+  overflow-y: scroll;
+  max-height: 70vh;
 }
 
 .panel nav{
