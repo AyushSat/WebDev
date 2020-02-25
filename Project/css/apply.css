@@ -230,6 +230,7 @@
   border:1px solid white;
   flex:5;
   align-self: center;
+  max-height: 60vh;
 }
 
 .panel nav{
@@ -237,7 +238,7 @@
 }
 
 .panel h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color:white;
   padding: 0px 0px 15px 15px;
 }
@@ -289,7 +290,7 @@
 .form{
   padding-top: 20px;
   background-color: rgb(255, 255, 255);
-  height: 50vh;
+  padding-bottom: 30px;
 }
 
 .form h1{
@@ -352,8 +353,7 @@ form input{
 
 .jobbtns a:hover{
   cursor: pointer;
-  padding:7.5px;
-  font-size:1.25rem;
+
 }
 
 .shade{
