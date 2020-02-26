@@ -125,6 +125,7 @@ nav{
 .centercontent{
   display:flex;
   justify-content: center;
+  margin-bottom: 10%;
 }
 
 .main-content{
@@ -138,7 +139,6 @@ nav{
 .main-content section{
   border-radius: 30px;
   width:350px;
-  margin:3%;
   margin-top: 3%;
   box-shadow: 10px 10px 27px 1px rgba(0,0,0,0.75);
 
@@ -152,6 +152,10 @@ nav{
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 
+}
+
+.main-content h1{
+  font-size:2rem;
 }
 
 
