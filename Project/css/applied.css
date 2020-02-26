@@ -28,9 +28,10 @@
     width: 90%;
     height: 10vh;
     margin: auto;
-    color:rgb(41, 38, 30);
+    color:rgb(255,255,255);
     align-items: center;
     font-size: 1.5rem;
+    flex-wrap: wrap;
   }
   
   .logo-container, .nav-links{
@@ -49,10 +50,11 @@
     text-decoration: none;
     color: rgb(41, 38, 30);
     margin: 5px;
+    transition: .2s;
   }
   
   .logo:hover{
-    color:rgb(45, 96, 27);
+    color:rgb(24, 218, 127);
     
   }
   
@@ -72,7 +74,7 @@
   }
   
   .nav-link:hover{
-    color:rgb(255, 255, 255);
+    color:rgb(24, 218, 127);
     font-size:1.25rem;
   }
   
@@ -120,6 +122,8 @@
 .inputinfo{
     flex:2;
     display:flex;
+    flex-wrap: wrap;
+
 }
   
 .userinfo{

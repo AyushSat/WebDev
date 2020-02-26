@@ -59,19 +59,19 @@ const reqs = document.getElementById("req");
 
 function setText(num){
     if(num ==1){
-        jobdesc.innerHTML = "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
-        benefits.innerHTML = "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
-        reqs.innerHTML = "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
+        jobdesc.innerHTML = "Interested in flying for Homestead Airlines? Airline Pilot responsibilities include conducting various pre-flight checks to the aircraft’s operational systems, creating and adjusting flight plans and ensure secure takeoffs and landings.";
+        benefits.innerHTML = "Homestead Airlines is proud to provide their trustworthy pilots with a plethora of benefits including health, life, vision and dental insurance, as well as a retirement plan. Pilots may also receive paid vacation time, which increases incrementally based on years of service.";
+        reqs.innerHTML = "Commercial Pilot's License and Airline Transport Pilot's License, 1,000 hours of flight time, expertise in FAA regulations and safety procedures, 20/20 vision, attention to detail, and communication/collaboration skills.";
 
     }else if(num==2){
-        jobdesc.innerHTML = "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
-        benefits.innerHTML = "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
-        reqs.innerHTML = "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
+        jobdesc.innerHTML = "Flight Attendants are generally responsible for ensuring passengers' safety and comfort at all times. Their duties include ensuring that the emergency equipment is working, that the cabin is clean, and that there is an adequate supply of food and beverages.";
+        benefits.innerHTML = "Homestead Airlines is proud to provide their flight attendants with a healthy amount of benefits including additional paid training, health and life insurance, long-term disability insurance, and 401(k) retirement plans. Flight attendants may also receive discounts on hospitality services like hotels, cruises, rental vehicles, and more";
+        reqs.innerHTML = "Fluency in English, customer-centric, professional look, critical thinking and problem solving skills, time-management skills, interpersonal/communication skills, and cabin crew certification and training.";
 
     }else if(num==3){
-        jobdesc.innerHTML = "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
-        benefits.innerHTML = "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
-        reqs.innerHTML = "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi non, sunt nulla et quisquam repellat sint saepe perspiciatis aut aspernatur hic ea quibusdam at ad, dolorem laborum rerum porro!";
+        jobdesc.innerHTML = "A Flight Technician is responsible for the daily aircrafts maintenance. They verify the aircraft conformity and the state of its engine or cockpit pieces. They maintain the aircraft, repair the reported defects and ensure the plane service so it can leave in confidence.";
+        benefits.innerHTML = "Homestead Airlines is proud to provide their flight technicians with a healthy amount of benefits including additional paid training, health and life insurance, long-term disability insurance, and 401(k) retirement plans. Flight technicians may also receive discounts on hospitality services like hotels, cruises, rental vehicles, and more.";
+        reqs.innerHTML = "Aircraft Maintenance Certification and Training, Stress management, team worker, masters degree in aviation related fields, experience working with aviation technology, and a repairman's certificate.";
 
     }
 }

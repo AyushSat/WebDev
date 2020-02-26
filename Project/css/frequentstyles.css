@@ -20,7 +20,7 @@ body{
 }
 
 .headercontainer{
-  /*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255,255,255,.5));*/
+  border-bottom: 1px solid black;
 }
 
 header{
@@ -32,7 +32,6 @@ header{
   align-items: center;
   font-size: 1.5rem;
   flex-wrap: wrap;
-
 }
 
 .logo-container, .nav-links{
@@ -111,118 +110,77 @@ nav{
   transition:.5s;
 }
 
-.benefits{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 2rem;
-  text-align: center;
-  margin:auto;
-}
+  
+  /*all styling ends*/
+  /*airline info styling begins*/
 
-.benefits h1{
-  letter-spacing: .5rem;
-}
+  .cover{
+    background: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+  }
 
-
-
-.blockflex{
-  padding-top: 30px;
-  display: flex;
-}
-
-.block{
-  font-size: 18px;
-  flex: 1;
-  margin: 0px 40px 0px 40px;
-}
-
-
-
-
-.frequent{
-  background:rgb(231, 231, 231);
+.centercontent{
   display:flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.frequent h1{
-  font-size: 3rem;
-  letter-spacing: .5rem;
-  padding-bottom: 50px;
-  padding-top: 30px;
-}
-
-.frequent p{
-  width: 60%;
-  font-size: 1.5rem;
-  padding-bottom: 30px;
-}
-
-.frequent a{
-  text-decoration: none;
-  color: rgb(41, 38, 30);
-  padding:20px;
-  border: 1px solid black;
-  margin-bottom: 20px;
-}
-
-.frequent a:hover{
-  transition: .5s;
-  background-color:rgba(0, 201, 77, 0.2);
-}
-
-
-.inputinfo{
-  width: 55%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  display: flex;
   justify-content: center;
 }
 
-.leftcolumn{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 10px;
+.main-content{
+  display:flex;
+  width:90%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.leftcolumn input{
+.main-content section{
+  border-radius: 30px;
+  width:350px;
+  margin:5%;
+  box-shadow: 10px 10px 27px 1px rgba(0,0,0,0.75);
+
+}
+
+.main-content section img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+}
+
+
+
+
+#aboutus{
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 5rem;
+  letter-spacing: 2rem;
   padding-top: 20px;
-  margin: 0px 0px 20px 0px;
-  font-size: 18px;
-  font-family: 'Raleway';
-  vertical-align: middle;
 }
 
-.rightcolumn{
-  flex: 1;
-  margin-left: 10px;
+
+.main-content h1{
+  padding:20px 20px 0px 20px;
+}
+.main-content p{
+  padding:20px;
 }
 
-.rightcolumn textarea{
-  width: 100%;
-  height: 100%;
-  font-size: 18px;
-}
 
-/*
 
-.inputinfo input, textarea{
-  width: 40%;
-  font-size: 14px;
-}
 
-.inputinfo input{
-  padding-top: 10px;
-  margin: 0px 0px 10px 0px;
-}
 
-*/
+
+
+
+
+/*******/
 
 .contact{
   padding-top: 40px;
@@ -254,6 +212,7 @@ nav{
   flex:2;
   display:flex;
   flex-wrap: wrap;
+
 }
 
 .userinfo{
@@ -303,7 +262,6 @@ nav{
   background-color: rgba(0, 201, 77, 0.2);
   cursor: pointer;
 }
-
 .inputinfo input{
   background: transparent;
   font-size:2rem;
@@ -317,6 +275,20 @@ nav{
   color:rgb(190, 190, 190);
 }
 
+/*
+
+.inputinfo input, textarea{
+  width: 40%;
+  font-size: 14px;
+}
+
+.inputinfo input{
+  padding-top: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+*/
+
 .social{
   padding-top: 10px;
 }
@@ -329,10 +301,9 @@ nav{
   padding-right:0px;
 }
 
+
 footer{
-  position:fixed;
-  bottom: 0px;
-  left:50%;
-  transform: translateX(-50%);
-  color:white;
+  background-color: #9695a8;
+  color: black;
+  text-align: center;
 }
