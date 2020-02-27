@@ -51,10 +51,11 @@ header{
   text-decoration: none;
   color: white;
   margin: 5px;
+  transition: .2s;
 }
 
 .logo:hover{
-  color:rgb(45, 96, 27);    
+  color:rgb(68, 204, 19);    
 }
 
 nav{
@@ -73,7 +74,7 @@ nav{
 }
 
 .nav-link:hover{
-  color:rgb(45, 96, 27);
+  color:rgb(68, 204, 19);    
   font-size:1.25rem;
 }
 

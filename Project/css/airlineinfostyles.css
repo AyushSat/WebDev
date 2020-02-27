@@ -9,6 +9,7 @@
 body{
   font-family: 'Raleway';
   position: absolute;
+  width: 100vw;
 }
 
 .headercontainer{
