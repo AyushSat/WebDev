@@ -8,6 +8,7 @@
 
 body{
   font-family: 'Raleway';
+  position: absolute;
 }
 
 
@@ -28,7 +29,7 @@ header{
   width: 90%;
   height: 10vh;
   margin: auto;
-  color:rgb(41, 38, 30);
+  color:black;
   align-items: center;
   font-size: 1.5rem;
   flex-wrap: wrap;
@@ -128,6 +129,7 @@ nav{
 .blockflex{
   padding-top: 30px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .block{
@@ -173,59 +175,8 @@ nav{
   background-color:rgba(0, 201, 77, 0.2);
 }
 
-
-.inputinfo{
-  width: 55%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.leftcolumn{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 10px;
-}
-
-.leftcolumn input{
-  padding-top: 20px;
-  margin: 0px 0px 20px 0px;
-  font-size: 18px;
-  font-family: 'Raleway';
-  vertical-align: middle;
-}
-
-.rightcolumn{
-  flex: 1;
-  margin-left: 10px;
-}
-
-.rightcolumn textarea{
-  width: 100%;
-  height: 100%;
-  font-size: 18px;
-}
-
-/*
-
-.inputinfo input, textarea{
-  width: 40%;
-  font-size: 14px;
-}
-
-.inputinfo input{
-  padding-top: 10px;
-  margin: 0px 0px 10px 0px;
-}
-
-*/
-
 .contact{
-  padding-top: 40px;
+  padding: 40px 0 30px 0;
   text-align:center;
   margin:auto;
   align-items: center;
@@ -247,6 +198,10 @@ nav{
 
 .title h1{
   font-size: 3rem;
+}
+
+.title p, .social{
+  width: 85%;
 }
 
 
@@ -330,9 +285,31 @@ nav{
 }
 
 footer{
-  position:fixed;
-  bottom: 0px;
-  left:50%;
-  transform: translateX(-50%);
-  color:white;
+  text-align: center;
+  background:gray;
+  color: white;
+}
+
+@media (max-width: 500px){
+  .contact{
+    flex-wrap: none;
+    flex-direction: column;
+  }
+
+  .title, .inputinfo{
+    width: 80%;
+  }
+
+  .social{
+    width: 100%;
+  }
+
+  .userinfo input{
+    font-size: 18px;
+    margin: -0.5px 0 -0.5px 0;
+  }
+
+  .message textarea, .message button{
+    font-size: 18px;
+  }
 }
