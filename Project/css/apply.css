@@ -439,13 +439,14 @@ footer{
   }
 
   .heading p{
-    font-size: 24px;
+    font-size: 1rem;
   }
 
   .panel{
     flex: 1;
-    min-height: 500px;
+    min-height: 60vh;
     margin-top: 50px;
+    max-height: 60vh;
   }
   
   .contact{
