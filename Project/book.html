@@ -38,7 +38,7 @@
                     <div class="flying">
                         <div class="from">
                             <p>Flying From</p>
-                            <select name="" class="custom-select" required>
+                            <select name="" class="custom-select inputfield" required>
                                 <option value="">Select a City</option>
                                 <option value="1">Los Angeles (LAX)</option>
                                 <option value="2">San Francisco (SFO)</option>
@@ -60,7 +60,7 @@
                             
                         <div class="to">
                             <p>Flying To</p>
-                            <select name="" class="custom-select" required>
+                            <select name="" class="custom-select inputfield" required>
                                 <option value="">Select a Destination</option>
                                 <option value="1">Los Angeles (LAX)</option>
                                 <option value="2">San Francisco (SFO)</option>
@@ -83,19 +83,19 @@
                     
                     <div class="dates">
                         <div class="departing">
-                            <p>Departing</p>
-                            <input type="date" class="dateselect" required>
+                            <p>Destination arrival date</p>
+                            <input type="date" class="dateselect inputfield" required>
                         </div>
                         <div class="arrival">
-                            <p>Arrival</p>
-                            <input type="date" class="dateselect" required>
+                            <p>Home arrival date</p>
+                            <input type="date" class="dateselect inputfield" required>
                         </div>
                     </div>
 
                     <div class="time">
                         <div class="departuretime">
-                            <p>Departure Time</p>
-                            <select name="" class="custom-select" required>
+                            <p>Destination arrival time</p>
+                            <select name="" class="custom-select inputfield" required>
                                 <option value="">Select a time</option>
                                 <option value="1">5:30AM</option>
                                 <option value="1">7:00AM</option>
@@ -107,8 +107,8 @@
                             </select>
                         </div>
                         <div class="arrivaltime">
-                            <p>Arrival Time</p>
-                            <select name="" class="custom-select" required>
+                            <p>Home arrival time</p>
+                            <select name="" class="custom-select inputfield" required>
                                 <option value="">Select a time</option>
                                 <option value="1">7:30AM</option>
                                 <option value="1">9:00AM</option>
@@ -124,17 +124,17 @@
                     <div class="passengers">
                         <div class="adults">
                             <p>Adults</p>
-                            <input type="number" placeholder="" min="0" required>
+                            <input type="number" class="inputfield" placeholder="" min="0" required>
                         </div>
                         <div class="children">
                             <p>Children</p>
-                            <input type="number" placeholder="" min="0" required>
+                            <input type="number" class="inputfield" placeholder="" min="0" required>
                         </div>
                     </div>
                     
                     <div class="travelclass">
                         <p>Travel Class</p>
-                        <select name="" class="custom-select" required>
+                        <select name="" class="custom-select inputfield" required>
                             <option value=""></option>
                             <option value="1">Economy Class</option>
                             <option value="2">Business Class</option>
@@ -145,11 +145,11 @@
 
                  <div class="customerinfo">
                     <h1>Customer Information</h1>
-                    <input class="in" type="name" placeholder="Name" required>
+                    <input class="in inputfield" type="name" placeholder="Name" required>
                     <br>
-                    <input class="in" type="email" placeholder="Email" required>
+                    <input class="in inputfield" type="email" placeholder="Email" required>
                     <br>
-                    <input class="in" type="tel" placeholder="Phone Number" required>
+                    <input class="in inputfield" type="tel" placeholder="Phone Number" required>
                     <br>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                     <p>Fill out the booking form with flight and customer information, and book your flight with the button below! Happy traveling!</p>
                 </div>
                 <div class="button">
-                    <a href="book.html"><button onclick="clear()" type="submit">Book Flight</button></a>
+                    <a href="book.html"><button onclick="clear(); process()" type="submit">Book Flight</button></a>
                 </form>
                 </div>
             </div>
@@ -204,5 +204,7 @@
         <p>Copyright HomesteadAirlines &copy; 2020</p>
     </footer>
     
+    <script src="./js/book.js"></script>
+
 </body>
 </html>
